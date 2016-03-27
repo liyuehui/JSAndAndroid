@@ -1,0 +1,20 @@
+<html>
+    <script >
+        /* This function is invoked by the activity */
+        function fromHtmlJs() {
+            alert("1");
+           document.getElementById("droid").innerHTML="android_waving.png";
+            <!--alert("2");-->
+        }
+    </script>
+    <body>
+        <!-- Calls into the javascript interface for the activity -->
+        <a onClick="window.fromAndroidObj.fromAndroid()"><div id="droid" style="width:80px;
+            margin:0px auto;
+            padding:10px;
+            text-align:center;
+            border:2px solid #202020;" >
+                Click me!
+        </div></a>
+    </body>
+</html>
