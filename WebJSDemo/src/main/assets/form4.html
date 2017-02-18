@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>无标题文档</title>
+</head>
+<style type="text/css">
+    h1{
+    font-size:17px
+    }
+
+    h5{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    }
+
+    p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 9px;
+    font-size:13px
+    line-height:1.3;
+    }
+
+
+</style>
+
+<script>
+    function showData(){
+        var str = window.fromAndroidObj.fromAndroid()
+
+        var Obj =  JSON.parse(str);
+        alert(Obj.age);
+        var companyName = document.getElementById("companyName");
+        companyName.innerHTML = Obj.age;
+
+    }
+
+        <!--document.getElementsByTagName('h1').length-->
+        <!--document.getElementsByTagName('h1')[0].style.fontSize = "50px";-->
+        <!--alert("header:"+document.getElementsByTagName('h1')[0].style.fontSize);-->
+        <!--alert("header:"+document.getElementsByTagName('h1').length);-->
+
+
+
+</script>
+<body onload="">
+
+<h1 id="header1" align="center">公司章程</h1>
+<hr style="height:1px;border:none;background-color:#dddddd"/>
+
+<h5 align="center">第一章&nbsp;总则</h5>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    第一条&nbsp;&nbsp;为规范公司的组织和行为，根据《中华人民共和国公司法》（以下简称《公司法》）和有关法律、行政法规以及规范性文件的规定，制定本章程。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    第二条&nbsp;&nbsp;公司类型：有限责任公司。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    第三条&nbsp;&nbsp;本章程为本公司行为准则，公司、股东、董事、监事和高级管理人员应当严格遵守。</p>
+
+<h5 align="center">第二章&nbsp;公司的名称、住所、经营范围、营业期限及注册资本</h5>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    第四条&nbsp;&nbsp;公司名称为：<u><span id="companyName"></span></u>。</p>
+
+</body>
+
+</html>
